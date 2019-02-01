@@ -1,0 +1,4 @@
+export const Config = {
+  apiUrl: 'http://localhost',
+  gaId: 'UA-XXXXXXXXX-1'
+};

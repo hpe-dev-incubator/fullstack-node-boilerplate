@@ -1,0 +1,50 @@
+{
+    "name": "onesphere-trial-manager-server-frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "next build",
+        "start": "node server.js",
+        "docker:build": "docker build -t frontend .",
+        "docker:clean": "docker rm -f frontend || true",
+        "docker:run": "docker run -p 3000:3000 --name frontend frontend",
+        "docker:stop": "docker stop frontend",
+        "docker:start": "docker start frontend && yarn run docker:logs",
+        "docker:logs": "docker logs -f frontend",
+        "deploy": "yarn run docker:build && yarn run docker:clean && yarn run docker:run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "babel-eslint": "^10.0.1",
+        "babel-plugin-styled-components": "^1.8.0",
+        "express": "^4.16.2",
+        "grommet": "^2.3.1",
+        "grommet-icons": "^4.1.0",
+        "isomorphic-unfetch": "^2.0.0",
+        "next": "latest",
+        "prop-types": "^15.6.2",
+        "react": "16.7.0",
+        "react-dom": "16.7.0",
+        "react-ga": "^2.5.6",
+        "styled-components": "^4.1.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "7.1.5",
+        "babel-plugin-module-resolver": "^2.7.1",
+        "babel-plugin-wrap-in-js": "^1.1.0",
+        "eslint": "^5.3.0",
+        "eslint-config-airbnb": "17.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.1",
+        "eslint-plugin-react": "^7.11.0",
+        "glob": "^7.1.2",
+        "normalize.css": "^7.0.0",
+        "postcss-easy-import": "^3.0.0",
+        "postcss-loader": "^2.0.7",
+        "raw-loader": "^0.5.1",
+        "webpack": "^3.10.0"
+    }
+}
