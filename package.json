@@ -4,6 +4,7 @@
   "description": "Fullstack Node Boilerplate",
   "main": "index.js",
   "scripts": {
+    "setup": "(cd frontend && yarn && cp -n config.js.example config.js); (cd server && yarn);",
     "start": "concurrently --names \"SERVER,UI\" -c \"bgGreen.bold,bgMagenta.bold\" -k \"(cd server && yarn start)\" \"(cd frontend && yarn start)\""
   },
   "repository": {
