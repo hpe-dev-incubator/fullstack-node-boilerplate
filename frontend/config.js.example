@@ -1,4 +1,4 @@
 export const Config = {
-  apiUrl: 'http://localhost',
-  gaId: 'UA-XXXXXXXXX-1'
+  apiUrl: 'http://localhost:3001/api',
+  gaId: 'UA-XXXXXXXXX-1',
 };
