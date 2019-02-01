@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-node-boilerplate-server",
+  "version": "0.0.9",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node --presets babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Mejias",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-airbnb": "^2.5.3",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0"
+  }
+}
