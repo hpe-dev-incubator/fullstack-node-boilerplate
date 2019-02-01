@@ -4,7 +4,7 @@
   "description": "Fullstack Node Boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently --names \"SERVER,UI\" -c \"bgGreen.bold,bgMagenta.bold\" -k \"(cd server && yarn start)\" \"(cd frontend && yarn start)\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/hpe-dev-incubator/fullstack-node-boilerplate/issues"
   },
-  "homepage": "https://github.com/hpe-dev-incubator/fullstack-node-boilerplate#readme"
+  "homepage": "https://github.com/hpe-dev-incubator/fullstack-node-boilerplate#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
 }
