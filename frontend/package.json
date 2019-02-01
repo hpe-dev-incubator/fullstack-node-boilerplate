@@ -14,9 +14,9 @@
         "docker:logs": "docker logs -f frontend",
         "deploy": "yarn run docker:build && yarn run docker:clean && yarn run docker:run"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": ["grommet", "react", "nextjs"],
+    "author": "Alex Mejias",
+    "license": "Apache-2.0",
     "dependencies": {
         "babel-eslint": "^10.0.1",
         "babel-plugin-styled-components": "^1.8.0",
