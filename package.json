@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-node-boilerplate",
+  "version": "0.0.9",
+  "description": "Fullstack Node Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hpe-dev-incubator/fullstack-node-boilerplate.git"
+  },
+  "keywords": [
+    "fullstack",
+    "node",
+    "react",
+    "express"
+  ],
+  "author": "Alex Mejias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hpe-dev-incubator/fullstack-node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hpe-dev-incubator/fullstack-node-boilerplate#readme"
+}
